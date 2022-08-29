@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ }
+
+
+ body {
+    background-color: hsl(210, 46%, 95%);
+    padding: 150px 80px;
+
+ }
+ section {
+    border-radius: 8px;
+    font-size: 13px;
+    padding: 20px;
+ }
+ figcaption {
+    display: inline-block;
+    vertical-align: super;
+    font-weight: 600;
+    margin-left: 4px;
+    
+ }
+ span {
+    display: block;
+    font-weight: 400;
+    
+ }
+ img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+ }
+ .strong {
+    font-weight: 600;
+    word-spacing: 5px;
+    margin-bottom: 8px;
+ }
+ .dan {
+    background: hsl(263, 55%, 52%)url(./images/bg-pattern-quotation.svg) no-repeat;
+    background-position: 85% 0; 
+    padding: 25px;
+ }
+ .dan img {
+    border: 2px solid  rgba(224, 211, 245, 0.7) ;
+ }
+ .dan figcaption {
+   color: rgba(245, 243, 249, 0.7);
+ }
+ .dan span {
+    color: rgba(194, 165, 240, 0.7);
+ }
+ .dan .strong {
+    color:rgba(245, 243, 249, 0.7) ;
+ }
+ .dan .info {
+    color: rgba(194, 165, 240, 0.5) ;
+ } 
+/* end of Dan */
+/* /begin of Jon */
+ .jon {
+    background-color:hsl(217, 19%, 35%) ;
+ }
+ .jon figcaption {
+   color: hsl(0, 0%, 81%);
+ }
+ .jon span {
+    color: rgba(207, 207, 207,50%);
+ }
+ .jon .strong {
+    color:hsl(0, 0%, 81%) ;
+ }
+ .jon .info {
+    color:rgba(207, 207, 207, 50%);
+
+ }
+ /*end of Jon  */
+ /* beginning of Jean */
+ .jean {
+    background-color:hsl(0, 0%, 100%) ;
+ }
+
+ .jean figcaption {
+    color: hsl(219, 29%, 14%);
+ }
+ .jean span {
+      color: rgb(134, 132, 132);
+ }
+ .jean .strong {
+   color:hsl(219, 29%, 14%) ;
+ }
+ .jean .info {
+   color: rgb(134, 132, 132);
+ }
+ /* end of section Jean */
+ /* end of section Pat */
+ .pat {
+    background-color: hsl(219, 29%, 14%);
+ }
+ .pat img {
+   border: 2px solid hsl(263, 55%, 52%) ;
+ }
+ .pat figcaption {
+    color: hsl(0, 0%, 81%);
+ }
+
+ .pat span {
+    color: rgb(0, 0, 50%);
+ }
+
+ .pat .strong {
+    color: hsl(0, 0%, 81%);
+ }
+ .pat .info {
+   color:rgb(0, 0, 50%);
+}
+ .kira {
+    background-color: hsl(0, 0%, 100%);
+ } 
+ .kira figcaption {
+   color: hsl(219, 29%, 14%);
+}
+
+.kira span {
+   color: hsl(218, 19%, 37%);
+}
+
+.kira .strong {
+   color: hsl(219, 29%, 14%);
+}
+
+.kira.info {
+   color: hsl(218, 19%, 37%);
+}
+ .testimonial-container {
+    display: grid;
+    gap: 20px;
+ }
+ 
+@media screen and (min-width:769px)and (max-width: 1024px){
+
+    .testimonial-container {
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+    }
+    .dan {
+        grid-column: 1/ 3;
+        grid-row: 1;
+
+    }
+    .jon {
+        grid-column: 1;
+        grid-row: 2;
+    }
+    .jean {
+        grid-column: 2;
+        grid-row:2 ;
+    }
+    .pat {
+        grid-column: 1/ 3;
+        grid-row: 3;
+    }
+    .kira {
+        grid-column: 3;
+        grid-row: 1/ 4;
+    }
+}
+@media screen and (min-width:1025px)and (max-width: 1440px){
+
+    .testimonial-container {
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+
+    }
+    .dan {
+        grid-column: 1/ 3;
+        grid-row: 1;
+
+    }
+    .jon {
+        grid-column: 3;
+        grid-row: 1;
+    }
+    .jean {
+        grid-column: 1;
+        grid-row:2 ;
+    }
+    .pat {
+        grid-column: 2/ 4;
+        grid-row: 2;
+    }
+    .kira {
+        grid-column: 4;
+        grid-row: 1/ 3;
+    }
+}
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.attribution a {
+    color: hsl(229, 71%, 13%);
+}
